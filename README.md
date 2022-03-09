@@ -17,7 +17,7 @@ use [importantimport/urara](https://github.com/importantimport/urara), build wit
 > `ADAPTER=node` required by Urara
 
 ```bash
-docker run --it --name dkit \
+docker run -it --rm --name dkit \
 -e ADAPTER=node \
 -e REPO=importantimport/urara \
 -e SERVE=true \
@@ -28,7 +28,7 @@ kwaabot/dkit build
 local repository at `/home/user/repo`, pnpm-store already exists, skip installation step, start the development server with port 8080
 
 ```bash
-docker run --it --rm \
+docker run -it --rm --name dkit \
 -e INSTALL=false \
 -v /home/user/repo:/usr/src/app \
 -v /var/cache/pnpm-store:/var/cache/pnpm-store \
