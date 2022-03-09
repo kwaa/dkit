@@ -20,7 +20,7 @@ use [importantimport/urara](https://github.com/importantimport/urara), build wit
 docker run --it --name dkit \
 -e ADAPTER=node \
 -e REPO=importantimport/urara \
--e SERVE=true
+-e SERVE=true \
 --network=host \
 kwaabot/dkit build
 ```
