@@ -1,8 +1,8 @@
 name: docker
 on:
   push:
-    branch:
-      - main
+    paths:
+      - 'Dockerfile'
   schedule:
     - cron: "0 0 1 * *"
   workflow_dispatch:
