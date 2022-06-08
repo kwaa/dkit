@@ -27,6 +27,8 @@ kwaabot/dkit build
 
 local repository at `/home/user/repo`, pnpm-store already exists, skip installation step, start the development server with port 8080
 
+> Currently unavailable due to store-dir setting failed
+
 ```bash
 docker run -dt --rm --name dkit \
 -e INSTALL=false \
